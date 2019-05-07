@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Purrfect Match</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="contact.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" >Purrfect  <i class="fa fa-paw fa-fw"></i> Match</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html  ">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Search Pets
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="#navbarNavDropdown">
+                <a class="dropdown-item navbar-right" href="puppies.html"><img src="imgs/1.jpg" alt="Nature" style="width:5%" />    Dogs</a>
+                <hr />
+                <a class="dropdown-item" href="kitties.html"><img src="imgs/cat2.jpg" alt="Nature" style="width:5%" />Cats </a>
+              </div>
+          </li>
+
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="https://petfinderfoundation.com/">Donate</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <form id="contact" method="POST" action="thankyou.html">
+      <h3>Have a question? Send us an email</h3>
+      <h4>Contact us today, and get reply with in 24 hours!</h4>
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" autofocus />
+      </fieldset>
+      <input type="text" name="_replyto" placeholder="Your email" />
+      <fieldset>
+        <input placeholder="Your Phone Number" type="tel" tabindex="3" />
+      </fieldset>
+
+      <fieldset>
+        <textarea placeholder="Type your Message Here...." tabindex="5"></textarea>
+      </fieldset>
+
+
+
+
+
+      <a href="thankyou.html">
+        <button class="btn btn-default btn-lg">
+          <i class="fa fa-paw fa-fw"></i> Submit!
+        </button>
+
+
+    </form>
+  </div>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

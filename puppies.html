@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Purrfect Match</title>
+
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+
+  <link rel="stylesheet" type="text/css" href="animals.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-expanded="false" aria-controls="#navbarNavDropdown">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">Purrfect <i class="fa fa-paw fa-fw"></i> Match</a>
+      </div>
+      <div id="navbarNavDropdown" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html ">Home</a></li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="#navbarNavDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Search Pets
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="#navbarNavDropdown">
+              <a class="dropdown-item navbar-right" href="puppies.html"><img src="imgs/1.jpg" alt="Nature"
+                  style="width:5%" /> Dogs</a>
+              <hr />
+              <a class="dropdown-item" href="kitties.html"><img src="imgs/cat2.jpg" alt="Nature" style="width:5%" />Cats
+              </a>
+            </div>
+          </li>
+
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+
+          <li>
+            <a href="https://petfinderfoundation.com/">Donate</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="content">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="imgs/1.jpg">
+              <img src="imgs/1.jpg" alt="Lights" style="width:100.5%" />
+            </a>
+            <div style="color:#333333" class="adopt-a-pup-card__text-label">
+              <h4><b>Monty</b></h4>
+            </div>
+            <div class="caption">
+              <p>
+                Monty enjoys chicken treats and cuddling while watching
+                Seinfeld.
+                <h5><b>Id: #D03</b></h5></span>
+              </p>
+              <button class="btn btn-default btn-lg">
+                <a data-placement="bottom" data-toggle="popover" data-title="Login" data-container="body" type="button"
+                  data-html="true" href="#" id="login"></a>
+                <i class="fa fa-paw fa-fw"></i> Inquire
+              </button>
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="imgs/2.jpg">
+              <img src="imgs/2.jpg" alt="Nature" style="width:93%" />
+            </a>
+            <div style="color:#333333" class="adopt-a-pup-card__text-label">
+              <h4><B>Jubilee</B></h4>
+            </div>
+            <div class="caption">
+              <p>
+                Jubilee enjoys thoughtful discussions by the campfire with
+                strangers. <br>
+                <h5><b>Id: #D023</b></h5></span>
+              </p>
+              <button class="btn btn-default btn-lg open-button" onclick="openForm()">
+                <i class="fa fa-paw fa-fw"></i> Inquire
+              </button>
+
+              <div class="form-popup" id="myForm">
+                <form action="thankyou.html" class="form-container">
+
+
+                  <label for="email"><b> Pet ID: </b></label>
+                  <input type="text" placeholder="Enter Pet ID" required>
+
+                  <label for="psw"><b>Your Name</b></label>
+                  <input type="text" placeholder="Enter your name" required>
+
+                  <label for="psw"><b>Email:</b></label>
+                  <input type="text" placeholder="Enter your email" required>
+
+
+
+
+                  <div class="wrapper">
+
+                    <label for="yes_no_radio">Have you ever had a pet before? *</label>
+                    <p>
+                      <input type="radio" name="yes_no" checked> Yes</input>
+                    </p>
+                    <p>
+                      <input type="radio" name="yes_no"> No</input>
+
+                    </p>
+                  </div>
+
+                  <label><b>Who will be responsible for the pet's care (feeding, cleaning litterbox, aking to vet,
+                      etc)?*</b></label>
+                  <input type="text" placeholder="Answer" required>
+
+                  <label><b>Will you vaccinate the pet?</b></label>
+                  <input type="text" placeholder="Answer" required>
+
+                  <label><b>If you go on a trip, who will take care of the pet?</b></label>
+                  <input type="text" placeholder="Answer" required>
+
+
+
+                  <button type="submit" class="btn">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="imgs/3.jpg">
+              <img src="imgs/3.jpg" alt="Fjords" style="width:93%" />
+            </a>
+            <div style="color:#333333" class="adopt-a-pup-card__text-label">
+              <h4><b>Beezy</b></h4>
+            </div>
+            <div class="caption">
+              <p>
+                Beezy's favorite past-time is helping you choose your brand
+                color.
+                <h5><b>Id: #D023</b></h5></span>
+              </p>
+              <button class="btn btn-default btn-lg">
+                <i class="fa fa-paw fa-fw"></i> Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="imgs/4.jpg">
+              <img src="imgs/4.jpg" alt="Lights" style="width:100%" />
+            </a>
+            <div style="color:#333333" class="adopt-a-pup-card__text-label">
+              <h4><b>Mochi</b></h4>
+            </div>
+            <div class="caption">
+              <p>
+                Mochi is the perfect "rubbery ducky" debugging pup, always
+                listening.
+                <h5><b>Id: #D023</b></h5></span>
+              </p>
+              <button class="btn btn-default btn-lg">
+                <i class="fa fa-paw fa-fw"></i> Adopt!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="imgs/5.jpg">
+              <img src="imgs/5.jpg" alt="Nature" style="width:100%" />
+            </a>
+            <div style="color:#333333" class="adopt-a-pup-card__text-label">
+              <h4><b>Brewery</b></h4>
+            </div>
+            <div class="caption">
+              <p>
+                Brewery loves fetching you your favorite homebrew from the
+                door.
+                <h5><b>Id: #D023</b></h5> </span>
+              </p>
+              <button class="btn btn-default btn-lg">
+                <i class="fa fa-paw fa-fw"></i> Adopt!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="imgs/6.jpg">
+              <img src="imgs/6.jpg" alt="Fjords" style="width:100%" />
+            </a>
+            <div style="color:#333333" class="adopt-a-pup-card__text-label">
+              <h4><b>Lucy</b></h4>
+            </div>
+            <div class="caption">
+              <p>
+                Picture yourself in a boat on a river, Lucy is a pup with
+                kaleidoscope eyes
+                <h5><b>Id: #D023</b></h5></span>
+              </p>
+              <button class="btn btn-default btn-lg">
+                <i class="fa fa-paw fa-fw"></i> Adopt!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="thankyou.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
